@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diana Andra Bârsan — Principal Software Developer</title>
+  <style>
+    /* ---------- Screen presentation (ignored by WeasyPrint/print) ---------- */
+    @media screen {
+      html { background: #e9edef; }
+      body {
+        max-width: 780px;
+        margin: 2.5rem auto;
+        padding: 3rem 3.4rem;
+        background: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 2px 14px rgba(18, 52, 59, 0.12);
+        font-size: 15px;
+        line-height: 1.55;
+      }
+      h1 { font-size: 30px; }
+      .headline { font-size: 17px; margin-top: 4px; }
+      .contact { font-size: 13.5px; margin-top: 8px; }
+      .summary { margin-top: 22px; }
+      h2 { font-size: 14px; margin: 28px 0 10px 0; padding-bottom: 5px; }
+      .role { font-size: 16px; }
+      .dates { font-size: 13.5px; }
+      .job { margin-bottom: 18px; }
+      ul { margin: 7px 0 0 20px; }
+      li { margin-bottom: 5px; }
+      .skillrow { margin-bottom: 6px; }
+    }
+    @media screen and (max-width: 680px) {
+      body { margin: 0; padding: 1.6rem 1.2rem 2.5rem; border-radius: 0; box-shadow: none; }
+      .jobhead { flex-wrap: wrap; }
+      .dates { padding-left: 0; width: 100%; margin-top: 1px; }
+    }
+  </style>
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 17mm 15mm 17mm;
+      @bottom-right { content: counter(page) " / " counter(pages); font-family: "DejaVu Sans",sans-serif; font-size: 7.5pt; color: #8a8f98; }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "DejaVu Sans", sans-serif; font-size: 9.4pt; line-height: 1.42; color: #23282e; }
+    a { color: #0f6b6b; text-decoration: none; }
+
+    h1 { font-size: 21pt; font-weight: bold; letter-spacing: 0.3px; color: #12343b; }
+    .headline { font-size: 11pt; color: #0f6b6b; font-weight: bold; margin-top: 1.5mm; }
+    .contact { margin-top: 2mm; font-size: 8.8pt; color: #4a5058; }
+    .contact span { white-space: nowrap; }
+    .sep { color: #b8bec6; padding: 0 1.2mm; }
+
+    h2 {
+      font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1.2px;
+      color: #12343b; margin: 6.5mm 0 2.2mm 0; padding-bottom: 1.1mm;
+      border-bottom: 0.5pt solid #c9d3d6;
+    }
+    .summary { margin-top: 4.5mm; text-align: justify; }
+
+    .job { margin-bottom: 4.2mm; page-break-inside: avoid; }
+    .job.allow-break { page-break-inside: auto; }
+    .jobhead { display: flex; justify-content: space-between; align-items: baseline; }
+    .role { font-size: 10.2pt; font-weight: bold; color: #12343b; }
+    .org { font-weight: normal; color: #3c434b; }
+    .dates { font-size: 8.8pt; color: #4a5058; white-space: nowrap; padding-left: 4mm; }
+    ul { margin: 1.4mm 0 0 4.5mm; }
+    li { margin-bottom: 1.1mm; padding-left: 0.8mm; }
+    li::marker { color: #0f6b6b; }
+    .oneline { margin-top: 0.8mm; color: #3c434b; }
+
+    .skillrow { margin-bottom: 1.2mm; }
+    .skillrow b { color: #12343b; }
+    .langs { margin-top: 0.5mm; }
+  </style>
+</head>
+<body>
+
+<h1>Diana Andra Bârsan</h1>
+<div class="headline">Principal Software Developer</div>
+<div class="contact">
+  <span>Timișoara, Romania</span><span class="sep">·</span>
+  <span><a href="https://github.com/dianabarsan">github.com/dianabarsan</a></span><span class="sep">·</span>
+  <span><a href="https://linkedin.com/in/twisteddiana">linkedin.com/in/twisteddiana</a></span>
+</div>
+
+<div class="summary">
+  Software developer with 17+ years of experience across the full software lifecycle, currently principal engineer at Medic and top contributor to the Community Health Toolkit (CHT) — an open-source digital health platform supporting community health workers across seven countries. Designed and evolved the CHT's offline-first replication architecture across three generations (2018–2026). Deep expertise in performance, scalability, and distributed data. My work is public: contribution history, designs, and technical writing are auditable at <a href="https://github.com/medic/cht-core">github.com/medic/cht-core</a>.
+</div>
+
+<h2>Experience</h2>
+
+<div class="job allow-break">
+  <div class="jobhead">
+    <div class="role">Principal Software Developer <span class="org">— Medic (formerly Medic Mobile) · Remote</span></div>
+    <div class="dates">Jan 2022 – Sept 2026</div>
+  </div>
+  <ul>
+    <li>Led the migration from a monolithic architecture to Docker-based services with blue-green deployments (2022), enabling distributed, horizontally scaled systems while still maintaining one-click upgrades</li>
+    <li>Rearchitected the platform's core data path: rewrote initial and continuous replication off PouchDB internals (2023) and migrated replication queries to Nouveau indexes (2025), reducing system load by 50% and cutting replication time by 60%, measured in production</li>
+    <li>Leading a year-long UX overhaul of the CHWs' primary workflow (the tasks page): instrumented the page with interaction tracking, shipped task filtering (Feb 2026) and GPS capture for households (Aug 2026), currently designing offline-capable task prioritization and in-app maps showing task locations (2026)</li>
+    <li>Built the platform's performance measurement infrastructure: automated EC2 benchmarking suite (2023), database endpoint benchmarks (2026), and frontend performance benchmarks (2026) — now gating releases</li>
+    <li>Delivered measured performance wins: purged-docs cache (2023), task recalculation at scale (2024), end-to-end data archiving pipeline which unlocks system scalability where stale data encumbered day-to-day operations (2026)</li>
+    <li>Strengthened security and observability: introduced an auditing database (2025) and monitoring endpoints with replication-failure tracking (2026)</li>
+    <li>Defined the long-term platform strategy; led several community squads, mentored 10 community contributors</li>
+  </ul>
+</div>
+
+<div class="job allow-break">
+  <div class="jobhead">
+    <div class="role">Software Developer <span class="org">— Medic Mobile · Remote</span></div>
+    <div class="dates">Jan 2018 – Dec 2021</div>
+  </div>
+  <ul>
+    <li>Designed and delivered the first rewrite of the CHT's replication engine (2018), the foundation of the platform's offline-first sync — allowed systems to scale the number of concurrently connected users without stability issues</li>
+    <li>Designed doc-level authorization (2018), the platform's data-access security model</li>
+    <li>Built server-side purging (2019), allowing local devices to maintain good performance with historical data accumulation</li>
+    <li>Led the Angular 2 → 10 framework migration (2021) across the full web client</li>
+    <li>Delivered integrations including RapidPro messaging and token-based login (2020–21)</li>
+    <li>Acted as first responder for production incidents and live deployments</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="jobhead">
+    <div class="role">Full Stack Web Developer <span class="org">— Novisites VOF · Remote</span></div>
+    <div class="dates">Aug 2012 – Aug 2017</div>
+  </div>
+  <div class="oneline">Designed, built, and tested custom web applications and Prestashop webshops; created and integrated APIs; monitored uptime and security and optimized database performance.</div>
+</div>
+
+<div class="job">
+  <div class="jobhead">
+    <div class="role">Full Stack Web Developer <span class="org">— Web One Division / Eclipse Concept · Romania</span></div>
+    <div class="dates">Mar 2010 – Jul 2012</div>
+  </div>
+  <div class="oneline">Developed Magento webshops, CMS, and custom business applications; integrated third-party systems including payment processors.</div>
+</div>
+
+<div class="job">
+  <div class="jobhead">
+    <div class="role">Freelance Web Developer</div>
+    <div class="dates">Jun 2009 – May 2010</div>
+  </div>
+  <div class="oneline">Independent development of small-business websites and custom web applications.</div>
+</div>
+
+<div class="job">
+  <div class="jobhead">
+    <div class="role">Intern <span class="org">— Produweb · Belgium</span></div>
+    <div class="dates">Nov 2008 – May 2009</div>
+  </div>
+</div>
+
+<h2>Open Source &amp; Community</h2>
+<ul>
+  <li>#1 contributor to <a href="https://github.com/medic/cht-core">cht-core</a> since joining in 2018; #4 all-time on a codebase dating to 2013 (143 contributors) — full history public at <a href="https://github.com/dianabarsan">github.com/dianabarsan</a></li>
+  <li>Rewrote the technical and architecture documentation for the CHT (<a href="https://docs.communityhealthtoolkit.org">docs.communityhealthtoolkit.org</a>)</li>
+  <li>Technical support to CHT implementers on the <a href="https://forum.communityhealthtoolkit.org/">community forum</a> — 1,100+ posts since 2019</li>
+  <li>Upstream open-source contributions, including PouchDB, CouchDB, WebdriverIO</li>
+  <li>Author of CHT release announcements and technical posts published at medic.org</li>
+</ul>
+
+<h2>Technical Skills</h2>
+<div class="skillrow"><b>Expert (daily use):</b> JavaScript, TypeScript, Node.js, CouchDB, Docker, Kubernetes, Git, Linux, CI/CD pipelines</div>
+<div class="skillrow"><b>Proficient:</b> Python, Java, Bash, PostgreSQL, Angular, Express, REST APIs, Nginx, HAProxy, Grafana, Prometheus, AWS, Android SDK</div>
+<div class="skillrow"><b>Familiar:</b> Go, React, Redis, MongoDB, Couchbase</div>
+
+<h2>Languages</h2>
+<div class="langs">English (proficient) · French (intermediate) · Spanish (beginner) · Dutch (beginner)</div>
+
+<h2>Education</h2>
+<div class="job">
+  <div class="jobhead">
+    <div class="role">BSc, Computer Science <span class="org">— West University of Timișoara, Romania</span></div>
+    <div class="dates">2004 – 2008</div>
+  </div>
+</div>
+
+</body>
+</html>
