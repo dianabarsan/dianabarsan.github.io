@@ -1,122 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Diana Andra Bârsan — Principal Software Developer</title>
-<style>
-  /* ---------- Screen presentation (ignored by WeasyPrint/print) ---------- */
-  @media screen {
-    html { background: #e9edef; }
-    body {
-      max-width: 780px;
-      margin: 2.5rem auto;
-      padding: 3rem 3.4rem;
-      background: #ffffff;
-      border-radius: 4px;
-      box-shadow: 0 2px 14px rgba(18, 52, 59, 0.12);
-      font-size: 15px;
-      line-height: 1.55;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diana Bârsan — Principal Software Engineer</title>
+  <style>
+    /* ---------- Screen presentation (ignored by WeasyPrint/print) ---------- */
+    @media screen {
+      html { background: #e9edef; }
+      body {
+        max-width: 780px;
+        margin: 2.5rem auto;
+        padding: 3rem 3.4rem;
+        background: #ffffff;
+        border-radius: 4px;
+        box-shadow: 0 2px 14px rgba(18, 52, 59, 0.12);
+        font-size: 15px;
+        line-height: 1.55;
+      }
+      h1 { font-size: 30px; }
+      .headline { font-size: 17px; margin-top: 4px; }
+      .contact { font-size: 13.5px; margin-top: 8px; }
+      .summary { margin-top: 22px; }
+      h2 { font-size: 14px; margin: 28px 0 10px 0; padding-bottom: 5px; }
+      .role { font-size: 16px; }
+      .dates { font-size: 13.5px; }
+      .job { margin-bottom: 18px; }
+      ul { margin: 7px 0 0 20px; }
+      li { margin-bottom: 5px; }
+      .skillrow { margin-bottom: 6px; }
     }
-    h1 { font-size: 30px; }
-    .headline { font-size: 17px; margin-top: 4px; }
-    .contact { font-size: 13.5px; margin-top: 8px; }
-    .summary { margin-top: 22px; }
-    h2 { font-size: 14px; margin: 28px 0 10px 0; padding-bottom: 5px; }
-    .role { font-size: 16px; }
-    .dates { font-size: 13.5px; }
-    .job { margin-bottom: 18px; }
-    ul { margin: 7px 0 0 20px; }
-    li { margin-bottom: 5px; }
-    .skillrow { margin-bottom: 6px; }
-  }
-  @media screen and (max-width: 680px) {
-    body { margin: 0; padding: 1.6rem 1.2rem 2.5rem; border-radius: 0; box-shadow: none; }
-    .jobhead { flex-wrap: wrap; }
-    .dates { padding-left: 0; width: 100%; margin-top: 1px; }
-  }
-</style>
-<style>
-  @page {
-    size: A4;
-    margin: 16mm 17mm 15mm 17mm;
-    @bottom-right { content: counter(page) " / " counter(pages); font-family: "DejaVu Sans",sans-serif; font-size: 7.5pt; color: #8a8f98; }
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: "DejaVu Sans", sans-serif; font-size: 9.4pt; line-height: 1.42; color: #23282e; }
-  a { color: #0f6b6b; text-decoration: none; }
+    @media screen and (max-width: 680px) {
+      body { margin: 0; padding: 1.6rem 1.2rem 2.5rem; border-radius: 0; box-shadow: none; }
+      .jobhead { flex-wrap: wrap; }
+      .dates { padding-left: 0; width: 100%; margin-top: 1px; }
+    }
+  </style>
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 17mm 15mm 17mm;
+      @bottom-right { content: counter(page) " / " counter(pages); font-family: "DejaVu Sans",sans-serif; font-size: 7.5pt; color: #8a8f98; }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "DejaVu Sans", sans-serif; font-size: 9.4pt; line-height: 1.42; color: #23282e; }
+    a { color: #0f6b6b; text-decoration: none; }
 
-  h1 { font-size: 21pt; font-weight: bold; letter-spacing: 0.3px; color: #12343b; }
-  .headline { font-size: 11pt; color: #0f6b6b; font-weight: bold; margin-top: 1.5mm; }
-  .contact { margin-top: 2mm; font-size: 8.8pt; color: #4a5058; }
-  .contact span { white-space: nowrap; }
-  .sep { color: #b8bec6; padding: 0 1.2mm; }
+    h1 { font-size: 21pt; font-weight: bold; letter-spacing: 0.3px; color: #12343b; }
+    .headline { font-size: 11pt; color: #0f6b6b; font-weight: bold; margin-top: 1.5mm; }
+    .contact { margin-top: 2mm; font-size: 8.8pt; color: #4a5058; }
+    .contact span { white-space: nowrap; }
+    .sep { color: #b8bec6; padding: 0 1.2mm; }
 
-  h2 {
-    font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1.2px;
-    color: #12343b; margin: 6.5mm 0 2.2mm 0; padding-bottom: 1.1mm;
-    border-bottom: 0.5pt solid #c9d3d6;
-  }
-  .summary { margin-top: 4.5mm; text-align: justify; }
+    h2 {
+      font-size: 10.5pt; text-transform: uppercase; letter-spacing: 1.2px;
+      color: #12343b; margin: 6.5mm 0 2.2mm 0; padding-bottom: 1.1mm;
+      border-bottom: 0.5pt solid #c9d3d6;
+    }
+    .summary { margin-top: 4.5mm; text-align: justify; }
 
-  .job { margin-bottom: 4.2mm; page-break-inside: avoid; }
-  .job.allow-break { page-break-inside: auto; }
-  .jobhead { display: flex; justify-content: space-between; align-items: baseline; }
-  .role { font-size: 10.2pt; font-weight: bold; color: #12343b; }
-  .org { font-weight: normal; color: #3c434b; }
-  .dates { font-size: 8.8pt; color: #4a5058; white-space: nowrap; padding-left: 4mm; }
-  ul { margin: 1.4mm 0 0 4.5mm; }
-  li { margin-bottom: 1.1mm; padding-left: 0.8mm; }
-  li::marker { color: #0f6b6b; }
-  .oneline { margin-top: 0.8mm; color: #3c434b; }
+    .job { margin-bottom: 4.2mm; page-break-inside: avoid; }
+    .job.allow-break { page-break-inside: auto; }
+    .jobhead { display: flex; justify-content: space-between; align-items: baseline; }
+    .role { font-size: 10.2pt; font-weight: bold; color: #12343b; }
+    .org { font-weight: normal; color: #3c434b; }
+    .dates { font-size: 8.8pt; color: #4a5058; white-space: nowrap; padding-left: 4mm; }
+    ul { margin: 1.4mm 0 0 4.5mm; }
+    li { margin-bottom: 1.1mm; padding-left: 0.8mm; }
+    li::marker { color: #0f6b6b; }
+    .oneline { margin-top: 0.8mm; color: #3c434b; }
 
-  .skillrow { margin-bottom: 1.2mm; }
-  .skillrow b { color: #12343b; }
-  .langs { margin-top: 0.5mm; }
-</style>
+    .skillrow { margin-bottom: 1.2mm; }
+    .skillrow b { color: #12343b; }
+    .langs { margin-top: 0.5mm; }
+  </style>
 </head>
 <body>
 
-<h1>Diana Andra Bârsan</h1>
-<div class="headline">Principal Software Developer</div>
+<h1>Diana Bârsan</h1>
+<div class="headline">Principal Software Engineer</div>
 <div class="contact">
   <span>Timișoara, Romania</span><span class="sep">·</span>
+  <span><a href="mailto:diana.barsan@gmail.com">diana.barsan@gmail.com</a></span><span class="sep">·</span>
   <span><a href="https://github.com/dianabarsan">github.com/dianabarsan</a></span><span class="sep">·</span>
   <span><a href="https://linkedin.com/in/twisteddiana">linkedin.com/in/twisteddiana</a></span>
 </div>
 
 <h2>Summary</h2>
-<div class="summary">Software engineer with 17+ years of experience across the full software lifecycle, most recently principal engineer at Medic and top contributor to the Community Health Toolkit (CHT) — an open-source digital health platform supporting community health workers across seven countries. Designed and evolved the CHT's offline-first replication architecture across three generations (2018–2026). Deep expertise in performance, scalability, and distributed data. My work is public: contribution history, designs, and technical writing are auditable at <a href="https://github.com/medic/cht-core">github.com/medic/cht-core</a>. Fully remote since 2009.</div>
+<div class="summary">Software engineer with 17+ years of experience across the full software lifecycle, most recently principal engineer at Medic and top contributor to the Community Health Toolkit (CHT) — an open-source digital health platform supporting 200,000+ community health workers (CHWs) across seven countries. Designed and evolved the CHT's offline-first replication architecture across four iterations (2018–2026), scaling single deployments from ~400 to 20,000 users. Deep expertise in performance, scalability, and distributed data. My work is public: contribution history, designs, and technical writing are auditable at <a href="https://github.com/medic/cht-core">github.com/medic/cht-core</a>. Fully remote since 2009.</div>
 
 <h2>Experience</h2>
 
 <div class="job allow-break">
   <div class="jobhead">
-    <div class="role">Principal Software Developer <span class="org">— Medic (formerly Medic Mobile) · Remote</span></div>
+    <div class="role">Principal Software Engineer <span class="org">— Medic (formerly Medic Mobile) · Remote</span></div>
     <div class="dates">Jan 2022 – Sep 2026</div>
   </div>
   <ul>
-    <li>Architected the transition from a monolith to Docker-based services with blue-green deployments (2022), enabling distributed, horizontally scaled systems while still maintaining one-click upgrades with no downtime</li>
     <li>Rearchitected core data replication path by moving off CouchDB/PouchDB internals to a custom endpoint (2023), cutting replication time by 90%. Migrated replication queries to Nouveau indexes (2025), reducing replication time by 60% and system load by 50%. These changes enabled the platform to scale from a few hundred to 20,000 active users</li>
-    <li>Led a year-long UX overhaul of the CHWs' primary tasks workflow: instrumented it with interaction tracking, shipped task filtering (Feb 2026) and GPS capture for households (Aug 2026), and designed offline-capable task prioritization and in-app maps showing task locations (2026)</li>
-    <li>Built the platform's performance measurement infrastructure: automated EC2 benchmarking suite (2023), database endpoint benchmarks (2026), and frontend performance benchmarks (2026) — all gating releases</li>
-    <li>Delivered measured performance wins: purged-docs cache (2023), task recalculation at scale (2024), end-to-end data archiving pipeline unlocking system scalability where stale data encumbered day-to-day operations (2026)</li>
-    <li>Strengthened security and observability: introduced an auditing database (2025) and monitoring endpoints with replication-failure tracking (2026)</li>
-    <li>Defined the long-term platform strategy; led several community squads, mentored 10 community contributors</li>
+    <li>Architected the transition from a monolith to Docker-based services with blue-green deployments (2022): Docker as the default for deployments without dedicated ops teams, and Helm charts for Kubernetes where horizontal scale was needed, all with one-click, zero-downtime upgrades</li>
+    <li>Unblocked a stalled analytics pipeline (cht-sync, 2024): replaced an unmaintained Logstash + Redis stage with a custom CouchDB → Postgres connector that follows CouchDB's checkpoint protocol, removing a data-loss risk. Now the standard CHT analytics pipeline</li>
+    <li>Led a year-long UX overhaul of the CHWs' primary tasks workflow: instrumented it with interaction tracking, shipped task filtering (Feb 2026) and GPS capture for households (Aug 2026), and delivered offline-capable task prioritization and in-app maps showing task locations (2026). Partners reported a 30% increase in task completion six months after release</li>
+    <li>Built the platform's performance measurement infrastructure: automated EC2 benchmarking suite (2023), database endpoint benchmarks (2026), and frontend benchmarks (2026), all gating releases</li>
+    <li>Built a purged-docs cache (2023), eliminating repeated purge checks that took up to 40% of server time in heavily purged deployments</li>
+    <li>Built an end-to-end data archiving pipeline (2026) moving stale data to cold storage: in one production deployment, median replication time fell from 2.8 min to 6 s and 1-hour timeouts to 3 min</li>
+    <li>Strengthened security and observability: introduced an audit database (2025) recording every document change with its user and request ID, supporting compliance and incident investigations; added monitoring endpoints with replication-failure tracking (2026)</li>
+    <li>Defined the long-term platform strategy; led several community squads and mentored 10 contributors</li>
   </ul>
 </div>
 
 <div class="job allow-break">
   <div class="jobhead">
-    <div class="role">Software Developer <span class="org">— Medic Mobile · Remote</span></div>
+    <div class="role">Software Engineer <span class="org">— Medic Mobile · Remote</span></div>
     <div class="dates">Jan 2018 – Dec 2021</div>
   </div>
   <ul>
-    <li>Designed and delivered the first rewrite of the CHT's replication engine (2018), the foundation of the platform's offline-first sync — allowed systems to scale the number of concurrently connected users without stability issues</li>
-    <li>Designed doc-level authorization (2018), the platform's data-access security model</li>
-    <li>Built server-side purging (2019), allowing local devices to maintain good performance with historical data accumulation and enabling a new type of supervisor user role, which was previously infeasible due to local storage footprint</li>
-    <li>Led the Angular 2 → 10 framework migration (2021) across the full web client</li>
-    <li>Delivered integrations including RapidPro and AfricasTalking messaging and token-based login (2020–21)</li>
+    <li>Designed and delivered the first rewrite of the CHT's replication engine (2018), the foundation of the platform's offline-first sync; previously, users with too many documents could crash the server</li>
+    <li>Designed and delivered doc-level authorization (2018), closing a gap where users had near-unrestricted API access: locked offline users to the app's own endpoints and enforced per-document permissions on every write</li>
+    <li>Built server-side purging (2019) and configurable report replication depth (2020), making supervisor roles viable where replication and on-device indexing had made them unusable</li>
+    <li>Led the full rewrite of the web client from AngularJS to Angular 10 (2021); diagnosed and fixed a 2–3x page-load regression caused by Zone.js before release</li>
+    <li>Delivered messaging integrations (RapidPro, AfricasTalking) and token-based login (2020–21)</li>
     <li>Acted as first responder for production incidents and live deployments</li>
   </ul>
 </div>
@@ -126,7 +129,7 @@
     <div class="role">Full Stack Web Developer <span class="org">— Novisites VOF · Netherlands</span></div>
     <div class="dates">Aug 2012 – Aug 2017</div>
   </div>
-  <div class="oneline">Designed, built, and tested custom web applications and Prestashop webshops; created and integrated APIs; monitored uptime and security and optimized database performance</div>
+  <div class="oneline">Built and maintained custom web applications and Prestashop webshops that ran in production for years: integrated Amazon, payment processors (PayPal, Klarna) and shipping platforms; built a shared cart across a platform's separate webshops; took over a popular legacy shop (~1 order every 2 minutes) generating personalised printable PDF gifts</div>
 </div>
 
 <div class="job">
@@ -134,22 +137,8 @@
     <div class="role">Full Stack Web Developer <span class="org">— Web One Division / Eclipse Concept · Romania</span></div>
     <div class="dates">Mar 2010 – Jul 2012</div>
   </div>
-  <div class="oneline">Developed Magento webshops, CMS, and custom business applications; integrated third-party systems including payment processors</div>
-</div>
-
-<div class="job">
-  <div class="jobhead">
-    <div class="role">Freelance Web Developer</div>
-    <div class="dates">Jun 2009 – May 2010</div>
-  </div>
-  <div class="oneline">Independent development of small-business websites and custom web applications</div>
-</div>
-
-<div class="job">
-  <div class="jobhead">
-    <div class="role">Intern <span class="org">— Produweb · Belgium</span></div>
-    <div class="dates">Nov 2008 – May 2009</div>
-  </div>
+  <div class="oneline">Developed Magento webshops, CMS, and business applications with payment integrations; built an interactive news treemap sizing articles by importance and hits, with dynamic text sizing and controls to hide, highlight, or reweight article types</div>
+  <div class="oneline"><b>Earlier:</b> Freelance Web Developer (2009–2010) · Intern, Produweb, Belgium (2008–2009)</div>
 </div>
 
 <h2>Open Source &amp; Community</h2>
@@ -159,17 +148,18 @@
   <li>Technical support to CHT implementers on the <a href="https://forum.communityhealthtoolkit.org/">community forum</a> — 1,100+ posts since 2019</li>
   <li>Upstream open-source contributions, including PouchDB, CouchDB, WebdriverIO</li>
   <li>Author of CHT release announcements and technical posts published at medic.org</li>
+  <li>Side projects: custom game modules used by 50+ players; an AI-assisted scraper that scores real-estate listings against personal criteria</li>
 </ul>
 
 <h2>Technical Skills</h2>
-<div class="skillrow"><b>Languages:</b> JavaScript, TypeScript, Python, Java, Bash, Go</div>
-<div class="skillrow"><b>Backend &amp; Data:</b> Node.js, CouchDB, PostgreSQL, Redis, Express, REST APIs, dbt</div>
+<div class="skillrow"><b>Languages:</b> JavaScript, TypeScript, Python, PHP, Bash</div>
+<div class="skillrow"><b>Backend &amp; Data:</b> Node.js, CouchDB, PostgreSQL, MySQL, Redis, Express, REST APIs, dbt</div>
 <div class="skillrow"><b>Frontend:</b> Angular, React</div>
-<div class="skillrow"><b>Infrastructure &amp; DevOps:</b> Docker, Kubernetes, AWS, Nginx, HAProxy, CI/CD, Grafana, Prometheus, Linux</div>
+<div class="skillrow"><b>Infrastructure &amp; DevOps:</b> Docker, Kubernetes, AWS, Nginx, HAProxy, CI/CD (GitHub Actions), Grafana, Prometheus, Linux</div>
 <div class="skillrow"><b>Architecture &amp; Workflows:</b> Offline-First Systems, Distributed Data, Performance Benchmarking, AI-Assisted Engineering (Claude Code daily workflow, custom Claude Code skills, AI-augmented pipelines, LLM/ML data analysis)</div>
 
 <h2>Languages</h2>
-<div class="langs">English (proficient) · French (intermediate) · Spanish (beginner)</div>
+<div class="langs">Romanian (native) · English (fluent) · French (intermediate) · Spanish (beginner)</div>
 
 <h2>Education</h2>
 <div class="job">
